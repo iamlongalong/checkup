@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/gregdel/pushover"
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/types"
 )
 
 const Type = "pushover"

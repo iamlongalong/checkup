@@ -13,8 +13,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/aws/aws-sdk-go/service/s3"
 
-	"github.com/sourcegraph/checkup/storage/fs"
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/storage/fs"
+	"github.com/iamlongalong/checkup/types"
 )
 
 // Type should match the package name

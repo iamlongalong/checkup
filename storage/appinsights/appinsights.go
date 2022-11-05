@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/iamlongalong/checkup/types"
 	"github.com/microsoft/ApplicationInsights-Go/appinsights"
-	"github.com/sourcegraph/checkup/types"
 )
 
 // Type should match the package name

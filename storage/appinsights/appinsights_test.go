@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/iamlongalong/checkup/types"
 	"github.com/microsoft/ApplicationInsights-Go/appinsights"
-	"github.com/sourcegraph/checkup/types"
 )
 
 const instrumentationKey = "11111111-1111-1111-1111-111111111111"

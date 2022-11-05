@@ -10,7 +10,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/types"
 )
 
 var (

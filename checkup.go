@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/types"
 )
 
 // Checkup performs a routine checkup on endpoints or

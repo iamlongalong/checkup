@@ -1,3 +1,4 @@
+//go:build postgres
 // +build postgres
 
 package postgres
@@ -6,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/types"
 )
 
 func TestSQL(t *testing.T) {

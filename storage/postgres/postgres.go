@@ -8,8 +8,8 @@ import (
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"
 
-	"github.com/sourcegraph/checkup/storage/fs"
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/storage/fs"
+	"github.com/iamlongalong/checkup/types"
 )
 
 // New creates a new Storage instance based on json config

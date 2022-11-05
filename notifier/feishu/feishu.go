@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/go-lark/lark"
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/types"
 )
 
 // Type should match the package name

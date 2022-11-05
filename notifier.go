@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/sourcegraph/checkup/notifier/discord"
-	"github.com/sourcegraph/checkup/notifier/feishu"
-	"github.com/sourcegraph/checkup/notifier/mail"
-	"github.com/sourcegraph/checkup/notifier/mailgun"
-	"github.com/sourcegraph/checkup/notifier/pushover"
-	"github.com/sourcegraph/checkup/notifier/slack"
+	"github.com/iamlongalong/checkup/notifier/discord"
+	"github.com/iamlongalong/checkup/notifier/feishu"
+	"github.com/iamlongalong/checkup/notifier/mail"
+	"github.com/iamlongalong/checkup/notifier/mailgun"
+	"github.com/iamlongalong/checkup/notifier/pushover"
+	"github.com/iamlongalong/checkup/notifier/slack"
 )
 
 func notifierDecode(typeName string, config json.RawMessage) (Notifier, error) {

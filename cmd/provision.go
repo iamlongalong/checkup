@@ -8,8 +8,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sourcegraph/checkup"
-	"github.com/sourcegraph/checkup/storage/s3"
+	"github.com/iamlongalong/checkup"
+	"github.com/iamlongalong/checkup/storage/s3"
 )
 
 var provisionCmd = &cobra.Command{

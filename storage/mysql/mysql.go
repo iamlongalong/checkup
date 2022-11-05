@@ -8,8 +8,8 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
 
-	"github.com/sourcegraph/checkup/storage/fs"
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/storage/fs"
+	"github.com/iamlongalong/checkup/types"
 )
 
 // New creates a new Storage instance based on json config

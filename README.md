@@ -1,13 +1,13 @@
 <img src="https://i.imgur.com/UWhSoQj.png" width="450" alt="Checkup">
 
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square)](https://godoc.org/github.com/sourcegraph/checkup) [![Sourcegraph](https://sourcegraph.com/github.com/sourcegraph/checkup/-/badge.svg)](https://sourcegraph.com/github.com/sourcegraph/checkup?badge)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square)](https://godoc.org/github.com/iamlongalong/checkup) [![Sourcegraph](https://sourcegraph.com/github.com/iamlongalong/checkup/-/badge.svg)](https://sourcegraph.com/github.com/iamlongalong/checkup?badge)
 
 
 **Checkup is distributed, lock-free, self-hosted health checks and status pages, written in Go.**
 
 **It features an elegant, minimalistic CLI and an idiomatic Go library. They are completely interoperable and their configuration is beautifully symmetric.**
 
-Checkup was created by Matt Holt, author of the [Caddy web server](https://caddyserver.com). It is maintained and sponsored by [Sourcegraph](https://sourcegraph.com). If you'd like to dive into the source, you can [start here](https://sourcegraph.com/github.com/sourcegraph/checkup/-/def/GoPackage/github.com/sourcegraph/checkup/-/Checkup).
+Checkup was created by Matt Holt, author of the [Caddy web server](https://caddyserver.com). It is maintained and sponsored by [Sourcegraph](https://sourcegraph.com). If you'd like to dive into the source, you can [start here](https://sourcegraph.com/github.com/iamlongalong/checkup/-/def/GoPackage/github.com/iamlongalong/checkup/-/Checkup).
 
 This tool is a work-in-progress. Please use liberally (with discretion) and report any bugs!
 
@@ -67,10 +67,10 @@ There are 3 components:
 
 ## Quick Start
 
-[Download Checkup](https://github.com/sourcegraph/checkup/releases/latest) for your platform and put it in your PATH, or install from source:
+[Download Checkup](https://github.com/iamlongalong/checkup/releases/latest) for your platform and put it in your PATH, or install from source:
 
 ```bash
-$ go get -u github.com/sourcegraph/checkup/cmd/checkup
+$ go get -u github.com/iamlongalong/checkup/cmd/checkup
 ```
 
 You'll need Go 1.8 or newer. Verify it's installed properly:
@@ -104,13 +104,13 @@ You can configure Checkup entirely with a simple JSON document. You should confi
 
 Save the checkup configuration file as `checkup.json` in your working directory.
 
-We will show JSON samples below, to get you started. **But please [refer to the godoc](https://godoc.org/github.com/sourcegraph/checkup) for a comprehensive description of each type of checker, storage, and notifier you can configure!**
+We will show JSON samples below, to get you started. **But please [refer to the godoc](https://godoc.org/github.com/iamlongalong/checkup) for a comprehensive description of each type of checker, storage, and notifier you can configure!**
 
-Here are the configuration structures you can use, which are explained fully [in the godoc](https://godoc.org/github.com/sourcegraph/checkup). **Only the required fields are shown, so consult the godoc for more.**
+Here are the configuration structures you can use, which are explained fully [in the godoc](https://godoc.org/github.com/iamlongalong/checkup). **Only the required fields are shown, so consult the godoc for more.**
 
 #### HTTP Checker
 
-**[godoc: check/http](https://godoc.org/github.com/sourcegraph/checkup/check/http)**
+**[godoc: check/http](https://godoc.org/github.com/iamlongalong/checkup/check/http)**
 
 ```js
 {
@@ -124,7 +124,7 @@ Here are the configuration structures you can use, which are explained fully [in
 
 #### TCP Checker
 
-**[godoc: check/tcp](https://godoc.org/github.com/sourcegraph/checkup/check/tcp)**
+**[godoc: check/tcp](https://godoc.org/github.com/iamlongalong/checkup/check/tcp)**
 
 ```js
 {
@@ -136,7 +136,7 @@ Here are the configuration structures you can use, which are explained fully [in
 
 #### DNS Checkers
 
-**[godoc: check/dns](https://godoc.org/github.com/sourcegraph/checkup/check/dns)**
+**[godoc: check/dns](https://godoc.org/github.com/iamlongalong/checkup/check/dns)**
 
 ```js
 {
@@ -149,7 +149,7 @@ Here are the configuration structures you can use, which are explained fully [in
 
 #### TLS Checkers
 
-**[godoc: check/tls](https://godoc.org/github.com/sourcegraph/checkup/check/tls)**
+**[godoc: check/tls](https://godoc.org/github.com/iamlongalong/checkup/check/tls)**
 
 ```js
 {
@@ -161,7 +161,7 @@ Here are the configuration structures you can use, which are explained fully [in
 
 #### Exec Checkers
 
-**[godoc: check/exec](https://godoc.org/github.com/sourcegraph/checkup/check/exec)**
+**[godoc: check/exec](https://godoc.org/github.com/iamlongalong/checkup/check/exec)**
 
 The exec checker can run any command, and expects an zero-value exit code
 on success. Non-zero exit codes are considered errors. You can configure
@@ -178,7 +178,7 @@ service as DEGRADED. Additional options available on godoc link above.
 
 #### Amazon S3 Storage
 
-**[godoc: S3](https://godoc.org/github.com/sourcegraph/checkup/check/s3)**
+**[godoc: S3](https://godoc.org/github.com/iamlongalong/checkup/check/s3)**
 
 ```js
 {
@@ -194,7 +194,7 @@ To serve files for your status page from S3, copy `statuspage/config_s3.js` over
 
 #### File System Storage
 
-**[godoc: FS](https://godoc.org/github.com/sourcegraph/checkup/storage/fs)**
+**[godoc: FS](https://godoc.org/github.com/iamlongalong/checkup/storage/fs)**
 
 ```js
 {
@@ -205,7 +205,7 @@ To serve files for your status page from S3, copy `statuspage/config_s3.js` over
 
 #### GitHub Storage
 
-**[godoc: GitHub](https://godoc.org/github.com/sourcegraph/checkup/storage/github)**
+**[godoc: GitHub](https://godoc.org/github.com/iamlongalong/checkup/storage/github)**
 
 ```js
 {
@@ -230,7 +230,7 @@ Where "dir" is a subdirectory within the repo to push all the check files. Setup
 
 #### MySQL Storage
 
-**[godoc: storage/mysql](https://godoc.org/github.com/sourcegraph/checkup/storage/mysql)**
+**[godoc: storage/mysql](https://godoc.org/github.com/iamlongalong/checkup/storage/mysql)**
 
 A MySQL database can be configured as a storage backend.
 
@@ -248,7 +248,7 @@ When `create` is set to true, checkup will issue `CREATE TABLE` statements requi
 
 #### SQLite3 Storage (requires CGO to build, not available as a default)
 
-**[godoc: storage/sqlite3](https://godoc.org/github.com/sourcegraph/checkup/storage/sqlite3)**
+**[godoc: storage/sqlite3](https://godoc.org/github.com/iamlongalong/checkup/storage/sqlite3)**
 
 A SQLite3 database can be configured as a storage backend.
 
@@ -266,7 +266,7 @@ When `create` is set to true, checkup will issue `CREATE TABLE` statements requi
 
 #### PostgreSQL Storage
 
-**[godoc: storage/postgres](https://godoc.org/github.com/sourcegraph/checkup/storage/postgres)**
+**[godoc: storage/postgres](https://godoc.org/github.com/iamlongalong/checkup/storage/postgres)**
 
 A PostgreSQL database can be configured as a storage backend.
 
@@ -284,7 +284,7 @@ When `create` is set to true, checkup will issue `CREATE TABLE` statements requi
 
 #### Azure Application Insights Storage
 
-**[godoc: appinsights](https://godoc.org/github.com/sourcegraph/checkup/storage/appinsights)**
+**[godoc: appinsights](https://godoc.org/github.com/iamlongalong/checkup/storage/appinsights)**
 
 Azure Application Insights can be used as a storage backend, enabling Checkup to be used as a source of custom availability tests and metrics.  An example use case is documented [here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/availability-azure-functions).
 
@@ -419,7 +419,7 @@ $ checkup provision s3
 
 ### Manual Provisioning
 
-If you'd rather do this manually, see the [instructions on the wiki](https://github.com/sourcegraph/checkup/wiki/Provisioning-S3-Manually) but keeping in mind the region must be **US Standard**.
+If you'd rather do this manually, see the [instructions on the wiki](https://github.com/iamlongalong/checkup/wiki/Provisioning-S3-Manually) but keeping in mind the region must be **US Standard**.
 
 
 ## Checkup status page
@@ -440,7 +440,7 @@ You will need to edit `
 
 ### Setting up the status page for S3
 
-In statuspage/js, use the contents of [config_s3.js](https://github.com/sourcegraph/checkup/blob/master/statuspage/js/config_s3.js) to fill out [config.js](https://github.com/sourcegraph/checkup/blob/master/statuspage/js/config.js), which is used by the status page.
+In statuspage/js, use the contents of [config_s3.js](https://github.com/iamlongalong/checkup/blob/master/statuspage/js/config_s3.js) to fill out [config.js](https://github.com/iamlongalong/checkup/blob/master/statuspage/js/config.js), which is used by the status page.
 This is where you specify how to access the S3 storage bucket you just provisioned for check files.
 
 As you perform checks, the status page will update every so often with the latest results. **Only checks that are stored will appear on the status page.**
@@ -501,7 +501,7 @@ Checkup is as easy to use in a Go program as it is on the command line.
 
 First, create an IAM user with credentials as described in the section above.
 
-Then `go get github.com/sourcegraph/checkup` and import it.
+Then `go get github.com/iamlongalong/checkup` and import it.
 
 Then replace `ACCESS_KEY_ID` and `SECRET_ACCESS_KEY` below with the actual values for that user. Keep those secret. You'll also replace `BUCKET_NAME` with the unique bucket name to store your check files:
 
@@ -524,7 +524,7 @@ This method creates a new IAM user with read-only permission to S3 and also crea
 
 ### Using Go to perform checks
 
-First, `go get github.com/sourcegraph/checkup` and import it. Then configure it:
+First, `go get github.com/iamlongalong/checkup` and import it. Then configure it:
 
 ```go
 c := checkup.Checkup{

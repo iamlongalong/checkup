@@ -1,3 +1,4 @@
+//go:build !sql
 // +build !sql
 
 package sql
@@ -6,7 +7,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/types"
 )
 
 type Storage struct{}

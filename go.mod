@@ -1,4 +1,4 @@
-module github.com/sourcegraph/checkup
+module github.com/iamlongalong/checkup
 
 go 1.16
 

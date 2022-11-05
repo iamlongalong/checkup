@@ -7,7 +7,7 @@ import (
 
 	"gopkg.in/gomail.v2"
 
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/types"
 )
 
 // Type should match the package name

@@ -9,8 +9,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sourcegraph/checkup"
-	"github.com/sourcegraph/checkup/storage/fs"
+	"github.com/iamlongalong/checkup"
+	"github.com/iamlongalong/checkup/storage/fs"
 )
 
 var listenAddr string

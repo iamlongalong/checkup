@@ -3,7 +3,7 @@ package fs
 import (
 	"fmt"
 
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/types"
 )
 
 const IndexName = "index.json"

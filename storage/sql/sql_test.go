@@ -1,3 +1,4 @@
+//go:build sql
 // +build sql
 
 package sql
@@ -9,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/types"
 )
 
 func TestSQL(t *testing.T) {

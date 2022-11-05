@@ -1,3 +1,4 @@
+//go:build mysql
 // +build mysql
 
 package mysql
@@ -6,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sourcegraph/checkup/types"
+	"github.com/iamlongalong/checkup/types"
 )
 
 func TestSQL(t *testing.T) {

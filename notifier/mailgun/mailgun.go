@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/iamlongalong/checkup/types"
 	mailgun "github.com/mailgun/mailgun-go/v4"
-	"github.com/sourcegraph/checkup/types"
 )
 
 const Type = "mailgun"
