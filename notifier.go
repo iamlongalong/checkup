@@ -5,6 +5,7 @@ import (
 	"fmt"
 
 	"github.com/sourcegraph/checkup/notifier/discord"
+	"github.com/sourcegraph/checkup/notifier/feishu"
 	"github.com/sourcegraph/checkup/notifier/mail"
 	"github.com/sourcegraph/checkup/notifier/mailgun"
 	"github.com/sourcegraph/checkup/notifier/pushover"
@@ -17,6 +18,8 @@ func notifierDecode(typeName string, config json.RawMessage) (Notifier, error) {
 		return mail.New(config)
 	case slack.Type:
 		return slack.New(config)
+	case feishu.Type:
+		return feishu.New(config)
 	case mailgun.Type:
 		return mailgun.New(config)
 	case pushover.Type:

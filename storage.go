@@ -11,13 +11,11 @@ import (
 	"github.com/sourcegraph/checkup/storage/postgres"
 	"github.com/sourcegraph/checkup/storage/s3"
 	"github.com/sourcegraph/checkup/storage/sql"
-	"github.com/sourcegraph/checkup/storage/sqlite3"
 )
 
 func storageDecode(typeName string, config json.RawMessage) (Storage, error) {
 	switch typeName {
-	case sqlite3.Type:
-		return sqlite3.New(config)
+
 	case mysql.Type:
 		return mysql.New(config)
 	case postgres.Type:
